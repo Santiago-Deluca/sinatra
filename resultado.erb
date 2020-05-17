@@ -1,0 +1,28 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Dia de la Semana</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+  <script src="js/scripts.js"></script>
+
+</head>
+
+<div class="jumbotron" id="jumbo">
+          <h2>De acuerdo a mis calculos la fecha ingresada cae un... </h2>
+         <button type="button" class="btn btn-success btn-block" id="result" onclick="mostrar();">Haz click para tener el resultado</button>
+</div>
+
+<div class="form-group" id="resultado">
+ <div>
+   <img class="img-fluid"  src="images\martes.jpg" alt="martes" width="100%" height="300px" >
+ </div>
+</div>
+
+
+<script>
+document.getElementById("result").addEventListener("click", function() {
+document.getElementById("resultado").style.display="block"
+document.getElementById("jumbo").style.display="none";
+});
+</script>
